@@ -1,0 +1,6 @@
+pymongo
+feedgen
+xlrd
+dicttoxml
+requests
+flask

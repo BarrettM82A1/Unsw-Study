@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{{url_for('add_entry')}}">
+	<header>
+    <h3>Post:lgaName (exact spell: lgaName)</h3>
+	</header>
+    <table>
+        <tr>
+            <td>lgaName</td>
+            <td><input type="text" name="lgaName"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Submit" />
+</form>
+<form method="post" action="{{url_for('add_entry')}}">
+	<header>
+    <h3>Post:Postcode</h3>
+	</header>
+    <table>
+        <tr>
+            <td>Postcode</td>
+            <td><input type="text" name="postcode"></td>
+        </tr>
+    </table>
+    <input type="submit" value="Submit" />
+</form>
+<form method="get" action="{{url_for('get_all_entry')}}">
+    <header>
+    <h3>get all the entrys</h3>
+	</header>
+    <table>
+        <tr>
+            <td>Request Type</td>
+            <td>
+                <select name = "Type">
+                    <option value="JSON">JSON</option>
+                    <option value="ATOM">ATOM</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="get" />
+</form>
+<form method="get" action="{{url_for('add_entry')}}">
+    <header>
+    <h3>get detail entrys</h3>
+	</header>
+    <table>
+        <tr>
+            <td>Id:Reigon name</td>
+            <td><input type="text" name="Regionname"></td>
+        </tr>
+        <tr>
+            <td>Request Type</td>
+            <td>
+                <select name = "requiredtype">
+                    <option value="JSON">JSON</option>
+                    <option value="ATOM">ATOM</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="get" />
+</form>
+<form method="post" action="{{url_for('add_entry')}}">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <header>
+    <h3>Delete one entry</h3>
+	</header>
+    <table>
+        <tr>
+            <td>Id:Reigon name</td>
+            <td><input type="text" name="Deletename"></td>
+        </tr>
+    </table>
+    <input type="submit" value="delete" />
+</form>
+
+</body>
+</html>
