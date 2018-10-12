@@ -1,0 +1,184 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     houses
+Instances:    20640
+Attributes:   9
+              median_house_value
+              median_income
+              housing_median_age
+              total_rooms
+              total_bedrooms
+              population
+              households
+              latitude
+              longitude
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+median_house_value =
+
+  40248.5142 * median_income +
+   1156.3039 * housing_median_age +
+     -8.1816 * total_rooms +
+    113.4107 * total_bedrooms +
+    -38.5351 * population +
+     48.3083 * households +
+ -42576.7219 * latitude +
+ -42823.7438 * longitude +
+-3594022.942
+
+Time taken to build model: 0.34 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.7974
+Mean absolute error                  50806.1304
+Root mean squared error              69637.9114
+Relative absolute error                 55.7203 %
+Root relative squared error             60.3415 %
+Total Number of Instances            20640     
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     houses-weka.filters.unsupervised.attribute.AddExpression-Elog(a1)-Nexpression-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20640
+Attributes:   9
+              median_income
+              housing_median_age
+              total_rooms
+              total_bedrooms
+              population
+              households
+              latitude
+              longitude
+              log(a1)
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+log(a1) =
+
+      0.1782 * median_income +
+      0.0033 * housing_median_age +
+     -0      * total_rooms +
+      0.0005 * total_bedrooms +
+     -0.0002 * population +
+      0.0002 * households +
+     -0.2801 * latitude +
+     -0.2762 * longitude +
+    -11.7971
+
+Time taken to build model: 0.05 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.8013
+Mean absolute error                      0.2565
+Root mean squared error                  0.3405
+Relative absolute error                 55.7175 %
+Root relative squared error             59.8186 %
+Total Number of Instances            20640     
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     houses-weka.filters.unsupervised.attribute.AddExpression-Ea1^2-Nexpression-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20640
+Attributes:   9
+              median_income
+              housing_median_age
+              total_rooms
+              total_bedrooms
+              population
+              households
+              latitude
+              longitude
+              a1^2
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+a1^2 =
+
+22456807543.3375 * median_income +
+792395418.799 * housing_median_age +
+-5656610.3746 * total_rooms +
+69601065.6223 * total_bedrooms +
+-20055710.6409 * population +
+19212318.0814 * households +
+-15284890318.4946 * latitude +
+-15679757647.4644 * longitude +
+-1387243929912.6616
+
+Time taken to build model: 0.04 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.7516
+Mean absolute error                28452544213.8984
+Root mean squared error            41378378225.3919
+Relative absolute error                 62.4912 %
+Root relative squared error             65.9588 %
+Total Number of Instances            20640     
+
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+Relation:     houses-weka.filters.unsupervised.attribute.AddExpression-Ea1^3-Nexpression-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    20640
+Attributes:   9
+              median_income
+              housing_median_age
+              total_rooms
+              total_bedrooms
+              population
+              households
+              latitude
+              longitude
+              a1^3
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+Linear Regression Model
+
+a1^3 =
+
+10913611492117232 * median_income +
+425088729882774.6 * housing_median_age +
+-3359360690439.1167 * total_rooms +
+37363808351802.086 * total_bedrooms +
+-8815830320255.822 * population +
+5282722638733.844 * households +
+-4713473342459076 * latitude +
+-4913383492102678 * longitude +
+-456658286770322940
+
+Time taken to build model: 0.03 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.7019
+Mean absolute error                14477826822641724
+Root mean squared error            21918943205303628
+Relative absolute error                 70.9335 %
+Root relative squared error             71.2256 %
+Total Number of Instances            20640     
+

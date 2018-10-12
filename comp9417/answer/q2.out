@@ -1,0 +1,26 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -V -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 0 -stddev-width 0 -sig-width 0 -count-width 5 -show-stddev -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_incorrect
+Datasets:   4
+Resultsets: 5
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       4/8/17 2:18 PM
+
+
+Dataset                   (1) meta.FilteredC | (2) meta.Filter (3) meta.Filtere (4) meta.Filtere (5) meta.Filtere
+-----------------------------------------------------------------------------------------------------------------
+Glass                    (100)   31.78(8.94) |   35.79(8.56)     46.63(11.29) v   80.47(10.14) v   60.74(12.45) v
+primary-tumor            (100)   58.82(6.16) |   61.51(6.19)     66.31( 6.92) v   76.43( 5.09) v   69.02( 7.49) v
+balance-scale            (100)   24.85(4.58) |   26.05(5.50)     35.22( 6.36) v   83.40( 6.73) v   42.88( 7.08) v
+hungarian-14-heart-diseas(100)   18.72(7.24) |   19.23(7.09)     22.23( 7.80)     94.10(11.23) v   28.99(11.00) v
+-----------------------------------------------------------------------------------------------------------------
+                                     (v/ /*) |         (0/4/0)          (3/1/0)          (4/0/0)          (4/0/0)
+
+
+Key:
+(1) meta.FilteredClassifier '-F \"unsupervised.attribute.AddNoise -C last -P 0 -S 1\" -W meta.CVParameterSelection -- -P \"M 2.0 30.0 5.0\" -X 10 -S 1 -W trees.J48 -- -C 0.01 -M 2' -4523450618538717400
+(2) meta.FilteredClassifier '-F \"unsupervised.attribute.AddNoise -C last -P 20 -S 1\" -W meta.CVParameterSelection -- -P \"M 2.0 30.0 5.0\" -X 10 -S 1 -W trees.J48 -- -C 0.01 -M 2' -4523450618538717400
+(3) meta.FilteredClassifier '-F \"unsupervised.attribute.AddNoise -C last -P 50 -S 1\" -W meta.CVParameterSelection -- -P \"M 2.0 30.0 5.0\" -X 10 -S 1 -W trees.J48 -- -C 0.01 -M 2' -4523450618538717400
+(4) meta.FilteredClassifier '-F \"unsupervised.attribute.AddNoise -C last -P 80 -S 1\" -W meta.CVParameterSelection -- -P \"M 2.0 30.0 5.0\" -X 10 -S 1 -W trees.J48 -- -C 0.01 -M 2' -4523450618538717400
+(5) meta.FilteredClassifier '-F \"unsupervised.attribute.AddNoise -C last -P 50 -S 1\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+

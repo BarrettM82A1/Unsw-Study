@@ -1,0 +1,64 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -V -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 2 -stddev-width 2 -sig-width 1 -count-width 5 -show-stddev -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_incorrect
+Datasets:   8
+Resultsets: 6
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       4/7/17 4:48 PM
+
+
+Dataset                   (6) meta.FilteredC | (1) meta.Filtere (2) meta.Filtere (3) meta.Filtere (4) meta.Filtere (5) meta.Filter
+----------------------------------------------------------------------------------------------------------------------------------
+anneal                   (100)   23.83(0.55) |   10.42( 3.13) *    5.07( 2.17) *    2.80( 1.73) *    1.74( 1.49) *    0.87(1.06) *
+audiology                (100)   74.79(1.85) |   51.01( 8.07) *   39.25( 8.49) *   32.00( 7.54) *   26.15( 7.76) *   21.57(7.01) *
+autos                    (100)   67.30(2.39) |   55.21(11.12) *   44.10(11.26) *   35.06(10.63) *   29.79(10.00) *   25.45(9.40) *
+credit-rating            (100)   44.49(0.67) |   21.54( 5.10) *   20.51( 4.39) *   19.67( 5.03) *   18.80( 5.07) *   18.43(4.57) *
+hypothyroid              (100)    7.71(0.09) |   10.58( 1.70) v    9.90( 1.32) v    9.31( 1.25) v    8.79( 1.18) v    8.48(1.16)  
+letter                   (100)   95.93(0.02) |   16.56( 1.00) *    9.46( 0.67) *    6.01( 0.58) *    4.73( 0.44) *    3.99(0.41) *
+microarray               (100)   48.92(0.67) |   48.51( 6.46)     48.41( 7.11)     48.20( 6.31)     47.14( 6.29)     45.90(6.39)  
+vote                     (100)   38.62(0.81) |    8.62( 3.78) *    8.10( 3.91) *    7.47( 3.79) *    7.26( 3.61) *    7.42(3.63) *
+----------------------------------------------------------------------------------------------------------------------------------
+                                     (v/ /*) |          (1/1/6)          (1/1/6)          (1/1/6)          (1/1/6)         (0/2/6)
+
+
+Key:
+(1) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 10.0 -no-replacement\" -W lazy.IBk -- -K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(2) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 25.0 -no-replacement\" -W lazy.IBk -- -K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(3) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 50.0 -no-replacement\" -W lazy.IBk -- -K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(4) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 75.0 -no-replacement\" -W lazy.IBk -- -K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(5) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 100.0 -no-replacement\" -W lazy.IBk -- -K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -4523450618538717400
+(6) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 100.0 -no-replacement\" -W rules.ZeroR' -4523450618538717400
+
+
+
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -V -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 0 -stddev-width 0 -sig-width 0 -count-width 5 -show-stddev -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_incorrect
+Datasets:   8
+Resultsets: 6
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       4/8/17 12:43 PM
+
+
+Dataset                   (6) meta.FilteredC | (1) meta.Filtere (2) meta.Filtere (3) meta.Filtere (4) meta.Filter (5) meta.Filter
+---------------------------------------------------------------------------------------------------------------------------------
+anneal                   (100)   23.83(0.55) |   11.06( 5.72) *    3.94( 2.10) *    2.28( 1.57) *    1.47(1.24) *    1.43(1.04) *
+audiology                (100)   74.79(1.85) |   46.62( 9.05) *   35.36( 8.01) *   29.22( 7.83) *   24.78(8.46) *   22.74(7.47) *
+autos                    (100)   67.30(2.39) |   58.84(12.37) *   48.53(12.46) *   36.25(10.45) *   26.31(9.90) *   18.23(8.78) *
+credit-rating            (100)   44.49(0.67) |   16.91( 5.43) *   15.55( 4.17) *   15.25( 4.04) *   14.91(3.65) *   14.43(3.96) *
+hypothyroid              (100)    7.71(0.09) |    1.80( 0.91) *    0.98( 0.56) *    0.59( 0.43) *    0.49(0.31) *    0.46(0.36) *
+letter                   (100)   95.93(0.02) |   29.86( 1.47) *   21.60( 1.25) *   16.27( 1.00) *   13.58(0.89) *   11.97(0.71) *
+microarray               (100)   48.92(0.67) |   49.22( 3.27)     49.64( 3.31)     48.93( 4.03)     48.89(4.55)     49.55(3.36)  
+vote                     (100)   38.62(0.81) |    5.40( 3.77) *    5.08( 3.35) *    4.95( 3.16) *    4.26(2.88) *    3.43(2.56) *
+---------------------------------------------------------------------------------------------------------------------------------
+                                     (v/ /*) |          (0/1/7)          (0/1/7)          (0/1/7)         (0/1/7)         (0/1/7)
+
+
+Key:
+(1) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 10.0 -no-replacement\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(2) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 25.0 -no-replacement\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(3) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 50.0 -no-replacement\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(4) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 75.0 -no-replacement\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(5) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 100.0 -no-replacement\" -W trees.J48 -- -C 0.25 -M 2' -4523450618538717400
+(6) meta.FilteredClassifier '-F \"unsupervised.instance.Resample -S 1 -Z 100.0 -no-replacement\" -W rules.ZeroR' -4523450618538717400
+
